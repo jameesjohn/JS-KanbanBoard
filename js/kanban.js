@@ -56,7 +56,7 @@ document.querySelectorAll('.drop').forEach((element) => {
     event.preventDefault();
     const id = event.dataTransfer.getData('text');
     const item = document.getElementById(id);
-    `event.target`.appendChild(document.getElementById(id));
+    event.target.appendChild(document.getElementById(id));
   });
 
   element.addEventListener('dragover', (event) => {
